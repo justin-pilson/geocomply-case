@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platform name | GeoComply</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="root"></div>
+<template id="tpl">
+<div class="app">
+
+<!-- ================= BLUE FRAME ================= -->
+<div class="frame">
+<div class="dots" aria-hidden="true" style="right: -40px; top: 40px; width: 520px; height: 260px"></div>
+<div class="dots" aria-hidden="true" style="left: 38%; bottom: -60px; width: 300px; height: 160px; opacity: 0.6"></div>
+
+<header class="hdr">
+<svg role="img" aria-label="GeoComply" width="144" height="24" viewBox="0 0 228 38" style="width: 144px; height: 24px"><g transform="scale(1.1176)"><path d="M13.8.6c6 0 10.2 3.2 11.5 8.6l-3.2 1.4c-1-4.5-3.8-6.8-8.3-6.8-5.8 0-9.6 4-9.6 10 0 5.7 3.6 9.8 8.6 9.8 4.3 0 7.8-3 8.5-7.1h-9.1v-3.3h13.3v13.2h-3V21c-2.1 3.9-5.1 5.7-9.4 5.7-7.4 0-12.6-5.4-12.6-13C.5 6 6 .6 13.8.6zm14.6 17.1c0-5.2 3.7-8.9 8.8-8.9 5 0 8.5 3.5 8.5 8.5v1H31.8c.2 3.3 2.4 5.5 5.4 5.5 2.4 0 4.2-1.3 5.1-3.7l3.3.9c-1.3 3.5-4.5 5.8-8.4 5.8-5.1-.2-8.8-4-8.8-9.1zm13.8-1.9c-.4-2.4-2.3-4-5-4-2.6 0-4.5 1.6-5.1 4h10.1zm6.1 1.9c0-5.2 3.7-8.9 8.8-8.9 5.1 0 8.8 3.8 8.8 8.9 0 5.2-3.7 9-8.8 9-5.1-.1-8.8-3.8-8.8-9zm3.3 0c0 3.5 2.3 6 5.5 6s5.3-2.5 5.3-6-2.1-5.9-5.3-5.9c-3.2-.1-5.5 2.4-5.5 5.9zm40.8.5c-1.4 5.3-5.6 8.5-11.2 8.5-7.5 0-13-5.6-13-13.1S73.7.6 81.1.6c5.8 0 10 3.3 11.3 8.6l-3.2 1.4c-.8-4.3-3.8-6.8-8-6.8-5.3 0-9.2 4.2-9.2 9.9s3.9 9.9 9.2 9.9c4.1 0 7.2-2.6 8-6.8l3.2 1.4zm2.3-.5c0-5.2 3.7-8.9 8.8-8.9 5.1 0 8.8 3.8 8.8 8.9 0 5.2-3.7 9-8.8 9-5.1-.1-8.8-3.8-8.8-9zm3.4 0c0 3.5 2.3 6 5.5 6s5.3-2.5 5.3-6-2.1-5.9-5.3-5.9c-3.2-.1-5.5 2.4-5.5 5.9zm36.3 8.6V15.1c0-2.1-1.2-3.3-3-3.3-2 0-3.3 1.5-3.3 3.9v10.6h-3.3V15.1c0-2.1-1.2-3.4-3-3.4-2 0-3.3 1.5-3.3 4v10.5h-3.3V9h3.2v2.2c.9-1.7 2.6-2.5 4.5-2.5 2.2 0 3.8 1.1 4.4 3.2 1-2 2.8-3.2 5.2-3.2 3.2 0 5.1 2 5.1 5.6v11.9h-3.2zm6.9 7.1V9h3.2v2.8c1.2-1.9 3.6-3.1 6.2-3.1 4.4 0 7.7 3.6 7.7 8.9 0 5.3-3.3 9-8 9-2.4 0-4.6-1-5.8-2.8v9.5l-3.3.1zm3.1-15.7c0 3.8 2.7 5.9 5.5 5.9 2.5 0 5.2-1.8 5.2-5.7 0-3.2-1.9-6.2-5.1-6.2-2.9 0-5.6 2.3-5.6 6zm16.8 8.6V.9h3.3v25.4h-3.3zm7.7 7.1 4.2-9.1L166.5 9h3.7l4.8 11.1L180.1 9h3.6l-11.1 24.4h-3.7z" fill="#FFFFFF"></path><path d="M202.5.9v8c0 5.2-2.9 9.4-8.4 11.4-5.5-2-8.4-6.2-8.4-11.4v-8h16.8zm-15.1 1.6v6.4c0 4.4 2.2 7.8 6.8 9.7 4.5-1.9 6.8-5.3 6.8-9.7V2.5h-13.6zm3.7 3.6v2.8c0 2.5.8 4.3 3 5.6 1.9-1.1 2.9-2.6 3-4.7h-4V8.1h5.8v.8c0 3.3-1.6 5.9-4.8 7.5-3.1-1.6-4.7-4.2-4.7-7.5V4.5h9.5v1.7h-7.8z" fill="#FFFFFF"></path></g></svg>
+<p class="pname">Platform name</p>
+<nav aria-label="Teams" style="display: flex; gap: 4px; margin-left: 12px; flex-wrap: wrap">
+<sc-for list="{{teams}}" as="tm" hint-placeholder-count="3">
+<button class="{{tm.cls}}" onClick="{{tm.pick}}" aria-current="{{tm.cur}}">{{tm.label}}<sc-if value="{{tm.hasBadge}}" hint-placeholder-val="{{ true }}"><span class="count" title="{{tm.badgeTitle}}">{{tm.badge}}</span></sc-if></button>
+</sc-for>
+</nav>
+<span class="live"><i class="{{liveCls}}"></i>{{liveText}}</span>
+</header>
+
+<!-- engineering: deals board and fix library -->
+<sc-if value="{{isEng}}" hint-placeholder-val="{{ true }}">
+<sc-if value="{{engList}}" hint-placeholder-val="{{ true }}">
+<div class="band">
+<div class="titlerow">
+<div><h1 class="h1">{{engTitle}}</h1><p class="sub">{{engSub}}</p></div>
+<nav class="segs" aria-label="Engineering views">
+<sc-for list="{{engTabs}}" as="et" hint-placeholder-count="2"><button class="{{et.cls}}" onClick="{{et.pick}}">{{et.label}}<span class="n">{{et.n}}</span></button></sc-for>
+</nav>
+</div>
+</div>
+</sc-if>
+
+<!-- engineering: deal page -->
+<sc-if value="{{engDeal}}" hint-placeholder-val="{{ false }}">
+<div class="band tight">
+<nav class="crumbs" aria-label="Breadcrumb"><button class="crumb" onClick="{{toDeals}}">Deals</button><span aria-hidden="true">/</span><span class="here">{{dp.name}}</span></nav>
+<div class="titlerow">
+<div>
+<div class="tline"><h1 class="h1">{{dp.name}}</h1><span class="{{dp.hs}}" title="{{dp.statusSr}}"></span><span class="sr">Status: {{dp.statusSr}}</span></div>
+<p class="sub">{{dp.industry}}</p>
+</div>
+<div class="acts">
+<button class="onblue" onClick="{{dp.aeAsk}}" title="Message the deal owner"><span class="av">{{dp.aeIni}}</span>{{dp.aeName}}<span class="role">Deal owner</span></button>
+<sc-if value="{{dp.hasOwner}}" hint-placeholder-val="{{ false }}"><span class="onblue static"><span class="av">{{dp.ownerIni}}</span>{{dp.ownerName}}<span class="role">Engineer</span></span></sc-if>
+<sc-if value="{{dp.noOwner}}" hint-placeholder-val="{{ true }}"><button class="onblue solid" onClick="{{dp.assign}}">Assign to me</button></sc-if>
+<button class="onblue ghost" onClick="{{dp.openSf}}"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Salesforce</button>
+</div>
+</div>
+<p class="bquote">{{dp.quote}}</p>
+</div>
+<div class="rail"><div class="rail-in">
+<div class="cell"><span class="cl">Stage</span><span class="cv">{{dp.stage}}</span></div>
+<div class="cell"><span class="cl">{{dp.daysLabel}}</span><span class="cv">{{dp.daysText}}<sc-if value="{{dp.stalled}}" hint-placeholder-val="{{ false }}"><small>stalled</small></sc-if></span></div>
+<div class="cell"><span class="cl">Products</span><span class="prods"><sc-for list="{{dp.prods}}" as="pr" hint-placeholder-count="2"><span class="prod"><span class="pic" aria-hidden="true"><sc-if value="{{pr.core}}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 52 52" fill="none"><path d="M25.5352 49.5364C38.79 49.5364 49.5352 38.7912 49.5352 25.5364C49.5352 12.2816 38.79 1.53638 25.5352 1.53638C12.2804 1.53638 1.53516 12.2816 1.53516 25.5364C1.53516 38.7912 12.2804 49.5364 25.5352 49.5364ZM25.4067 7.37637L7.0259 25.7572L25.4067 44.138L43.7876 25.7572L25.4067 7.37637ZM25.3398 31.2029C28.4842 31.2029 31.0333 28.6538 31.0333 25.5094C31.0333 22.3651 28.4842 19.816 25.3398 19.816C22.1954 19.816 19.6464 22.3651 19.6464 25.5094C19.6464 28.6538 22.1954 31.2029 25.3398 31.2029Z" stroke-width="3.07266" stroke-miterlimit="10" stroke="currentColor"></path></svg></sc-if><sc-if value="{{pr.geo}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 52 47" fill="none"><path d="M1.65625 23.7882H49.6562M13.7024 45.2998C20.3554 45.2998 25.7486 35.5298 25.7486 23.478C25.7486 11.4262 20.3554 1.65625 13.7024 1.65625C7.04951 1.65625 1.65625 11.4262 1.65625 23.478C1.65625 35.5298 7.04951 45.2998 13.7024 45.2998ZM25.7486 45.2998C32.4016 45.2998 37.7948 35.5298 37.7948 23.478C37.7948 11.4262 32.4016 1.65625 25.7486 1.65625C19.0957 1.65625 13.7024 11.4262 13.7024 23.478C13.7024 35.5298 19.0957 45.2998 25.7486 45.2998ZM37.6101 45.2998C44.263 45.2998 49.6562 35.5298 49.6562 23.478C49.6562 11.4262 44.263 1.65625 37.6101 1.65625C30.9571 1.65625 25.5639 11.4262 25.5639 23.478C25.5639 35.5298 30.9571 45.2998 37.6101 45.2998Z" stroke-width="3.31231" stroke-miterlimit="10" stroke="currentColor"></path></svg></sc-if><sc-if value="{{pr.idc}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 52 52" fill="none"><path d="M17.8475 1.78979H1.78906V17.8482M1.78906 33.7314V49.7898H17.8475M49.7891 17.8482V1.78979H33.7306M33.7306 49.7898H49.7891V33.7314M25.4026 40.7764C33.9545 40.7764 40.8872 33.8436 40.8872 25.2917C40.8872 16.7398 33.9545 9.80703 25.4026 9.80703C16.8506 9.80703 9.91789 16.7398 9.91789 25.2917C9.91789 33.8436 16.8506 40.7764 25.4026 40.7764ZM25.4026 30.9261C28.5144 30.9261 31.037 28.4035 31.037 25.2917C31.037 22.1799 28.5144 19.6573 25.4026 19.6573C22.2908 19.6573 19.7682 22.1799 19.7682 25.2917C19.7682 28.4035 22.2908 30.9261 25.4026 30.9261Z" stroke-width="3.57974" stroke-miterlimit="10" stroke="currentColor"></path></svg></sc-if></span>{{pr.name}}</span></sc-for></span></div>
+<div class="cell"><span class="cl">Opp</span><span class="cv">{{dp.id}}</span></div>
+</div></div>
+</sc-if>
+
+<!-- engineering: fix page -->
+<sc-if value="{{engFix}}" hint-placeholder-val="{{ false }}">
+<div class="band tight">
+<nav class="crumbs" aria-label="Breadcrumb"><button class="crumb" onClick="{{fp.c1Go}}">{{fp.c1}}</button><span aria-hidden="true">/</span><sc-if value="{{fp.hasC2}}" hint-placeholder-val="{{ false }}"><button class="crumb" onClick="{{fp.c2Go}}">{{fp.c2}}</button><span aria-hidden="true">/</span></sc-if><span class="here">{{fp.title}}</span></nav>
+<div class="titlerow">
+<div><h1 class="h1">{{fp.title}}</h1><p class="sub">Written up by {{fp.by}}</p></div>
+<div class="acts"><button class="onblue solid" onClick="{{fp.openConf}}"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Open in Confluence</button></div>
+</div>
+<p class="blead">{{fp.summary}}</p>
+</div>
+<div class="rail"><div class="rail-in">
+<div class="cell"><span class="cl">Solved for</span><span class="cv">{{fp.solvedFor}}</span></div>
+<div class="cell"><span class="cl">Used on</span><span class="cv">{{fp.nUsed}}</span></div>
+<div class="cell"><span class="cl">Could help now</span><span class="cv">{{fp.nDeals}}<small style="color: #D3DEFF; font-weight: 400">{{fp.nDealsLabel}}</small></span></div>
+<div class="cell"><span class="cl">Ask first</span><span class="cv" style="font-size: 18px">{{fp.askFirst}}</span></div>
+</div></div>
+</sc-if>
+</sc-if>
+
+<!-- pods: handoff list -->
+<sc-if value="{{isPods}}" hint-placeholder-val="{{ false }}">
+<sc-if value="{{podList}}" hint-placeholder-val="{{ true }}">
+<div class="band">
+<div class="titlerow">
+<div><h1 class="h1">Handoffs</h1><p class="sub">Deals that just closed, with what you need to take each one over.</p></div>
+<nav class="segs" aria-label="Filter handoffs">
+<sc-for list="{{podFilters}}" as="pf" hint-placeholder-count="2"><button class="{{pf.cls}}" onClick="{{pf.pick}}">{{pf.label}}<span class="n">{{pf.n}}</span></button></sc-for>
+</nav>
+</div>
+</div>
+</sc-if>
+
+<!-- pods: handoff page -->
+<sc-if value="{{podPage}}" hint-placeholder-val="{{ false }}">
+<div class="band tight">
+<nav class="crumbs" aria-label="Breadcrumb"><button class="crumb" onClick="{{toHandoffs}}">Handoffs</button><span aria-hidden="true">/</span><span class="here">{{hp.name}}</span></nav>
+<div class="titlerow">
+<div>
+<div class="tline"><h1 class="h1">{{hp.name}}</h1><span class="{{hp.hs}}" title="{{hp.statusSr}}"></span><span class="sr">Status: {{hp.statusSr}}</span></div>
+<p class="sub">{{hp.industry}}</p>
+</div>
+<div class="acts">
+<sc-if value="{{hp.hasOwner}}" hint-placeholder-val="{{ true }}"><span class="onblue static"><span class="av">{{hp.ownerIni}}</span>{{hp.ownerName}}<span class="role">Account owner</span></span></sc-if>
+<sc-if value="{{hp.noOwner}}" hint-placeholder-val="{{ false }}"><button class="onblue solid" onClick="{{hp.assign}}">Assign to me</button></sc-if>
+<sc-if value="{{hp.canReview}}" hint-placeholder-val="{{ true }}"><button class="onblue solid" onClick="{{hp.review}}">Mark as reviewed</button></sc-if>
+<sc-if value="{{hp.reviewed}}" hint-placeholder-val="{{ false }}"><button class="onblue done" onClick="{{hp.unreview}}" title="Click to undo"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>Reviewed</button></sc-if>
+<button class="onblue ghost" onClick="{{hp.openSf}}"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Salesforce</button>
+</div>
+</div>
+<p class="bquote">{{hp.quote}}</p>
+</div>
+<div class="rail"><div class="rail-in">
+<div class="cell"><span class="cl">Closed</span><span class="cv">{{hp.closed}}</span></div>
+<div class="cell"><span class="cl">Sector</span><span class="cv">{{hp.sector}}</span></div>
+<div class="cell"><span class="cl">Bought</span><span class="prods"><sc-for list="{{hp.prods}}" as="pr" hint-placeholder-count="2"><span class="prod"><span class="pic" aria-hidden="true"><sc-if value="{{pr.core}}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 52 52" fill="none"><path d="M25.5352 49.5364C38.79 49.5364 49.5352 38.7912 49.5352 25.5364C49.5352 12.2816 38.79 1.53638 25.5352 1.53638C12.2804 1.53638 1.53516 12.2816 1.53516 25.5364C1.53516 38.7912 12.2804 49.5364 25.5352 49.5364ZM25.4067 7.37637L7.0259 25.7572L25.4067 44.138L43.7876 25.7572L25.4067 7.37637ZM25.3398 31.2029C28.4842 31.2029 31.0333 28.6538 31.0333 25.5094C31.0333 22.3651 28.4842 19.816 25.3398 19.816C22.1954 19.816 19.6464 22.3651 19.6464 25.5094C19.6464 28.6538 22.1954 31.2029 25.3398 31.2029Z" stroke-width="3.07266" stroke-miterlimit="10" stroke="currentColor"></path></svg></sc-if><sc-if value="{{pr.geo}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 52 47" fill="none"><path d="M1.65625 23.7882H49.6562M13.7024 45.2998C20.3554 45.2998 25.7486 35.5298 25.7486 23.478C25.7486 11.4262 20.3554 1.65625 13.7024 1.65625C7.04951 1.65625 1.65625 11.4262 1.65625 23.478C1.65625 35.5298 7.04951 45.2998 13.7024 45.2998ZM25.7486 45.2998C32.4016 45.2998 37.7948 35.5298 37.7948 23.478C37.7948 11.4262 32.4016 1.65625 25.7486 1.65625C19.0957 1.65625 13.7024 11.4262 13.7024 23.478C13.7024 35.5298 19.0957 45.2998 25.7486 45.2998ZM37.6101 45.2998C44.263 45.2998 49.6562 35.5298 49.6562 23.478C49.6562 11.4262 44.263 1.65625 37.6101 1.65625C30.9571 1.65625 25.5639 11.4262 25.5639 23.478C25.5639 35.5298 30.9571 45.2998 37.6101 45.2998Z" stroke-width="3.31231" stroke-miterlimit="10" stroke="currentColor"></path></svg></sc-if><sc-if value="{{pr.idc}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 52 52" fill="none"><path d="M17.8475 1.78979H1.78906V17.8482M1.78906 33.7314V49.7898H17.8475M49.7891 17.8482V1.78979H33.7306M33.7306 49.7898H49.7891V33.7314M25.4026 40.7764C33.9545 40.7764 40.8872 33.8436 40.8872 25.2917C40.8872 16.7398 33.9545 9.80703 25.4026 9.80703C16.8506 9.80703 9.91789 16.7398 9.91789 25.2917C9.91789 33.8436 16.8506 40.7764 25.4026 40.7764ZM25.4026 30.9261C28.5144 30.9261 31.037 28.4035 31.037 25.2917C31.037 22.1799 28.5144 19.6573 25.4026 19.6573C22.2908 19.6573 19.7682 22.1799 19.7682 25.2917C19.7682 28.4035 22.2908 30.9261 25.4026 30.9261Z" stroke-width="3.57974" stroke-miterlimit="10" stroke="currentColor"></path></svg></sc-if></span>{{pr.name}}</span></sc-for><sc-if value="{{hp.hasNote}}" hint-placeholder-val="{{ false }}"><span class="prod" style="color: #D3DEFF; font-weight: 400">{{hp.note}}</span></sc-if></span></div>
+<div class="cell"><span class="cl">Opp</span><span class="cv">{{hp.id}}</span></div>
+</div></div>
+</sc-if>
+</sc-if>
+
+<!-- marketing: biggest gap -->
+<sc-if value="{{isMkt}}" hint-placeholder-val="{{ false }}">
+<div class="band">
+<sc-if value="{{gap.has}}" hint-placeholder-val="{{ true }}">
+<p class="kick">Biggest gap right now</p>
+<div class="titlerow">
+<div><h1 class="h1 light" style="text-indent: -0.4em">{{gap.q}}</h1><p class="sub">{{gap.meta}}</p></div>
+<div class="acts" style="align-self: flex-end"><button class="onblue solid" onClick="{{gap.go}}">See what they said</button></div>
+</div>
+</sc-if>
+<sc-if value="{{gap.none}}" hint-placeholder-val="{{ false }}">
+<h1 class="h1 light">Every topic has content right now</h1>
+<p class="sub">New topics show up here as buyers raise them.</p>
+</sc-if>
+</div>
+</sc-if>
+</div>
+
+<!-- ================= WORKSPACE ================= -->
+<main class="main">
+
+<!-- engineering: deals board -->
+<sc-if value="{{isEng}}" hint-placeholder-val="{{ true }}">
+<sc-if value="{{engDeals}}" hint-placeholder-val="{{ true }}">
+<div class="board">
+<sc-for list="{{board}}" as="c" hint-placeholder-count="3">
+<section class="col" aria-label="{{c.name}}">
+<div class="colh"><h2>{{c.name}}</h2><span class="n">{{c.n}}</span></div>
+<sc-for list="{{c.cards}}" as="k" hint-placeholder-count="2">
+<button class="{{k.cls}}" onClick="{{k.open}}">
+<span class="cn">{{k.name}}</span>
+<span class="ci">{{k.industry}}</span>
+<span class="iss"><sc-for list="{{k.issues}}" as="ki" hint-placeholder-count="1"><span class="il"><i class="{{ki.mk}}" aria-hidden="true"></i>{{ki.t}}<span class="sr">, {{ki.sr}}</span></span></sc-for></span>
+<span class="cf"><span>{{k.stage}}</span><sc-if value="{{k.hasOwner}}" hint-placeholder-val="{{ false }}"><span class="av sm" title="{{k.ownerName}}">{{k.ownerIni}}</span></sc-if><sc-if value="{{k.noOwner}}" hint-placeholder-val="{{ true }}"><span class="noeng">{{k.noEngText}}</span></sc-if></span>
+</button>
+</sc-for>
+<sc-if value="{{c.empty}}" hint-placeholder-val="{{ false }}"><p class="empty">Nothing here right now.</p></sc-if>
+</section>
+</sc-for>
+</div>
+</sc-if>
+
+<!-- engineering: fix library -->
+<sc-if value="{{engLibrary}}" hint-placeholder-val="{{ false }}">
+<div class="lib">
+<sc-for list="{{library}}" as="lb" hint-placeholder-count="3">
+<button class="fcard" onClick="{{lb.open}}">
+<span class="fl">Solved for {{lb.solvedFor}}</span>
+<span class="ft">{{lb.title}}</span>
+<span class="fs">{{lb.summary}}</span>
+<span class="fcf"><span class="big">{{lb.n}}</span><span class="bl"><span>{{lb.nLabel}}</span><sc-if value="{{lb.hasNow}}" hint-placeholder-val="{{ true }}"><b>{{lb.nowNote}}</b></sc-if></span><span class="open">Open fix <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span>
+</button>
+</sc-for>
+</div>
+</sc-if>
+
+<!-- engineering: deal page -->
+<sc-if value="{{engDeal}}" hint-placeholder-val="{{ false }}">
+<h2 class="h2">{{dp.issuesTitle}}</h2>
+<sc-for list="{{dp.issues}}" as="is" hint-placeholder-count="2">
+<section class="{{is.cls}}" aria-label="{{is.name}}, {{is.st}}">
+<div class="left">
+<div class="top"><h3 class="name">{{is.name}}</h3><span class="st"><i aria-hidden="true"></i>{{is.st}}</span></div>
+<p class="why">{{is.why}}</p>
+<div class="links"><button class="lnk" onClick="{{is.srcOpen}}">{{is.srcLabel}}</button><button class="lnk" onClick="{{is.askGo}}">{{is.askName}}</button></div>
+</div>
+<div class="rcol">
+<sc-for list="{{is.fixes}}" as="fx" hint-placeholder-count="1"><button class="right" onClick="{{fx.open}}"><span class="fl">Fixed before</span><span class="ft">{{fx.title}}</span><span class="fs">{{fx.summary}}</span><span class="fw"><span>{{fx.solvedFor}}</span><span class="open">Open fix <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></button></sc-for>
+<sc-if value="{{is.noFix}}" hint-placeholder-val="{{ false }}"><div class="right none"><span class="fl">No fix on record</span><span class="ft">Nobody has solved this yet</span><span class="fs">{{is.estimate}}</span></div></sc-if>
+</div>
+</section>
+</sc-for>
+</sc-if>
+
+<!-- engineering: fix page -->
+<sc-if value="{{engFix}}" hint-placeholder-val="{{ false }}">
+<div class="two">
+<div class="stack">
+<section class="story"><p class="sl">The problem</p><p class="stx">{{fp.problem}}</p></section>
+<section class="story"><p class="sl">What we did</p><p class="stx">{{fp.fix}}</p></section>
+<section class="story navy"><p class="sl">{{fp.resultLabel}}</p><p class="stx">{{fp.result}}</p></section>
+<div class="srcrow"><span class="muted">Where this came from</span><sc-for list="{{fp.sources}}" as="so" hint-placeholder-count="2"><button class="lnk" onClick="{{so.open}}">{{so.t}}</button></sc-for></div>
+</div>
+<aside class="stack">
+<section class="box">
+<h3 class="bh">Open deals it could help</h3>
+<sc-for list="{{fp.deals}}" as="fd" hint-placeholder-count="2"><button class="{{fd.cls}}" onClick="{{fd.open}}"><span class="mn">{{fd.name}}</span><span class="mst"><i aria-hidden="true"></i>{{fd.st}}</span></button></sc-for>
+<sc-if value="{{fp.noDeals}}" hint-placeholder-val="{{ false }}"><p class="muted">None right now.</p></sc-if>
+</section>
+<section class="box">
+<h3 class="bh">Who to ask</h3>
+<sc-for list="{{fp.ask}}" as="fa" hint-placeholder-count="2"><div class="person"><span class="avl">{{fa.ini}}</span><span class="pn"><b>{{fa.name}}</b><span>{{fa.role}}</span></span><button class="lnk" onClick="{{fa.go}}">Message</button></div></sc-for>
+</section>
+<section class="box">
+<h3 class="bh">Used before on</h3>
+<sc-for list="{{fp.used}}" as="fu" hint-placeholder-count="2"><div class="urow"><span>{{fu.name}}</span><span>{{fu.kind}}</span></div></sc-for>
+</section>
+</aside>
+</div>
+</sc-if>
+</sc-if>
+
+<!-- pods: handoff list -->
+<sc-if value="{{isPods}}" hint-placeholder-val="{{ false }}">
+<sc-if value="{{podList}}" hint-placeholder-val="{{ true }}">
+<div class="ptable" role="list">
+<div class="phead" aria-hidden="true"><span>Account</span><span>Closed</span><span>Bought</span><span>Owner</span><span>Watch for</span></div>
+<sc-for list="{{podRows}}" as="r" hint-placeholder-count="4">
+<button class="{{r.cls}}" onClick="{{r.open}}" role="listitem">
+<span class="pc1"><span class="pn1">{{r.name}}</span><span class="pst"><i aria-hidden="true"></i>{{r.st}}</span></span>
+<span>{{r.closed}}</span>
+<span class="pprods"><sc-for list="{{r.prods}}" as="pr" hint-placeholder-count="2"><span class="pp"><span class="pic" aria-hidden="true"><sc-if value="{{pr.core}}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 52 52" fill="none"><path d="M25.5352 49.5364C38.79 49.5364 49.5352 38.7912 49.5352 25.5364C49.5352 12.2816 38.79 1.53638 25.5352 1.53638C12.2804 1.53638 1.53516 12.2816 1.53516 25.5364C1.53516 38.7912 12.2804 49.5364 25.5352 49.5364ZM25.4067 7.37637L7.0259 25.7572L25.4067 44.138L43.7876 25.7572L25.4067 7.37637ZM25.3398 31.2029C28.4842 31.2029 31.0333 28.6538 31.0333 25.5094C31.0333 22.3651 28.4842 19.816 25.3398 19.816C22.1954 19.816 19.6464 22.3651 19.6464 25.5094C19.6464 28.6538 22.1954 31.2029 25.3398 31.2029Z" stroke-width="3.07266" stroke-miterlimit="10" stroke="currentColor"></path></svg></sc-if><sc-if value="{{pr.geo}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 52 47" fill="none"><path d="M1.65625 23.7882H49.6562M13.7024 45.2998C20.3554 45.2998 25.7486 35.5298 25.7486 23.478C25.7486 11.4262 20.3554 1.65625 13.7024 1.65625C7.04951 1.65625 1.65625 11.4262 1.65625 23.478C1.65625 35.5298 7.04951 45.2998 13.7024 45.2998ZM25.7486 45.2998C32.4016 45.2998 37.7948 35.5298 37.7948 23.478C37.7948 11.4262 32.4016 1.65625 25.7486 1.65625C19.0957 1.65625 13.7024 11.4262 13.7024 23.478C13.7024 35.5298 19.0957 45.2998 25.7486 45.2998ZM37.6101 45.2998C44.263 45.2998 49.6562 35.5298 49.6562 23.478C49.6562 11.4262 44.263 1.65625 37.6101 1.65625C30.9571 1.65625 25.5639 11.4262 25.5639 23.478C25.5639 35.5298 30.9571 45.2998 37.6101 45.2998Z" stroke-width="3.31231" stroke-miterlimit="10" stroke="currentColor"></path></svg></sc-if><sc-if value="{{pr.idc}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 52 52" fill="none"><path d="M17.8475 1.78979H1.78906V17.8482M1.78906 33.7314V49.7898H17.8475M49.7891 17.8482V1.78979H33.7306M33.7306 49.7898H49.7891V33.7314M25.4026 40.7764C33.9545 40.7764 40.8872 33.8436 40.8872 25.2917C40.8872 16.7398 33.9545 9.80703 25.4026 9.80703C16.8506 9.80703 9.91789 16.7398 9.91789 25.2917C9.91789 33.8436 16.8506 40.7764 25.4026 40.7764ZM25.4026 30.9261C28.5144 30.9261 31.037 28.4035 31.037 25.2917C31.037 22.1799 28.5144 19.6573 25.4026 19.6573C22.2908 19.6573 19.7682 22.1799 19.7682 25.2917C19.7682 28.4035 22.2908 30.9261 25.4026 30.9261Z" stroke-width="3.57974" stroke-miterlimit="10" stroke="currentColor"></path></svg></sc-if></span>{{pr.name}}</span></sc-for><sc-if value="{{r.hasNote}}" hint-placeholder-val="{{ false }}"><span class="pnote">{{r.note}}</span></sc-if></span>
+<span><sc-if value="{{r.hasOwner}}" hint-placeholder-val="{{ true }}"><span class="pown"><span class="avl sm">{{r.ownerIni}}</span>{{r.owner}}</span></sc-if><sc-if value="{{r.noOwner}}" hint-placeholder-val="{{ false }}"><span class="unas">Unassigned</span></sc-if></span>
+<span class="wdots" title="{{r.watch}}"><sc-for list="{{r.watchDots}}" as="wd" hint-placeholder-count="1"><i class="wdot" aria-hidden="true"></i></sc-for><span class="sr">{{r.watch}}</span></span>
+</button>
+</sc-for>
+</div>
+</sc-if>
+
+<!-- pods: handoff page -->
+<sc-if value="{{podPage}}" hint-placeholder-val="{{ false }}">
+<div class="two">
+<div class="stack">
+<h2 class="h2s">Watch for</h2>
+<sc-for list="{{hp.watch}}" as="wa" hint-placeholder-count="1">
+<section class="wpanel">
+<h3 class="name">{{wa.t}}</h3>
+<p class="why">{{wa.d}}</p>
+<div class="links"><button class="lnk" onClick="{{wa.srcOpen}}">{{wa.srcLabel}}</button><sc-if value="{{wa.hasFix}}" hint-placeholder-val="{{ true }}"><button class="lnk" onClick="{{wa.go}}">View the fix</button></sc-if></div>
+</section>
+</sc-for>
+<sc-if value="{{hp.noWatch}}" hint-placeholder-val="{{ false }}"><div class="box"><p class="muted">Nothing flagged from the sale.</p></div></sc-if>
+<h2 class="h2s" style="margin-top: 18px">What happened during the sale</h2>
+<section class="box" style="gap: 0">
+<sc-for list="{{hp.during}}" as="du" hint-placeholder-count="3">
+<div class="{{du.cls}}">
+<div class="top"><p class="dt">{{du.t}}</p><span class="dst"><i aria-hidden="true"></i>{{du.st}}</span></div>
+<p class="dh">{{du.how}}</p>
+<button class="lnk" onClick="{{du.srcOpen}}">{{du.srcLabel}}</button>
+</div>
+</sc-for>
+<sc-if value="{{hp.noDuring}}" hint-placeholder-val="{{ false }}"><p class="muted">Nothing logged.</p></sc-if>
+</section>
+</div>
+<aside class="stack">
+<section class="box">
+<h3 class="bh">What they expect</h3>
+<sc-for list="{{hp.expects}}" as="ex" hint-placeholder-count="2"><p class="exp">{{ex.t}}</p></sc-for>
+</section>
+<section class="box">
+<h3 class="bh">Who matters on their side</h3>
+<sc-for list="{{hp.people}}" as="pe" hint-placeholder-count="2"><div class="person"><span class="avl">{{pe.ini}}</span><span class="pn"><b>{{pe.name}}</b><span>{{pe.role}}</span></span></div></sc-for>
+<sc-if value="{{hp.noPeople}}" hint-placeholder-val="{{ false }}"><p class="muted">Not in the deal notes. Ask the deal owner.</p></sc-if>
+</section>
+<section class="box">
+<h3 class="bh">Who worked the deal</h3>
+<sc-for list="{{hp.team}}" as="tw" hint-placeholder-count="2"><div class="person"><span class="avl">{{tw.ini}}</span><span class="pn"><b>{{tw.name}}</b><span>{{tw.role}}</span></span><button class="lnk" onClick="{{tw.go}}">Message</button></div></sc-for>
+</section>
+</aside>
+</div>
+</sc-if>
+</sc-if>
+
+<!-- marketing dashboard -->
+<sc-if value="{{isMkt}}" hint-placeholder-val="{{ false }}">
+<section class="mpanel" aria-label="Topics buyers raise">
+<div class="mtop">
+<h2 class="h2s">What buyers keep raising, and who’s raising it</h2>
+</div>
+<div class="mhead" aria-hidden="true"><span>Topic</span><span>Where those deals ended up</span><span class="c">Deals</span><span class="c">Content</span><span></span><sc-for list="{{heatCols}}" as="hc" hint-placeholder-count="6"><span class="c">{{hc.t}}</span></sc-for></div>
+<sc-for list="{{bars}}" as="b" hint-placeholder-count="5">
+<button class="{{b.cls}}" onClick="{{b.pick}}" aria-pressed="{{b.pressed}}">
+<span class="mq">{{b.q}}</span>
+<span class="mbar"><sc-for list="{{b.segs}}" as="sg" hint-placeholder-count="2"><span style="{{sg.style}}" title="{{sg.t}}"></span></sc-for></span>
+<span class="mn2 c">{{b.n}}</span>
+<span class="c"><span class="{{b.covCls}}" title="{{b.covTitle}}"></span><span class="sr">{{b.covTitle}}</span></span>
+<span></span>
+<sc-for list="{{b.cells}}" as="ce" hint-placeholder-count="6"><span class="hc" style="{{ce.style}}" title="{{ce.title}}">{{ce.n}}</span></sc-for>
+</button>
+</sc-for>
+<div class="legend" style="padding: 16px 14px 0; border-top: 2px dashed #E3E8F2">
+<sc-for list="{{covLegend}}" as="cl" hint-placeholder-count="3"><span><i class="{{cl.cls}}"></i>{{cl.t}}</span></sc-for>
+</div>
+</section>
+
+<div class="qhead">
+<div><p class="kick2">What buyers said, {{sel.n}}</p><h2 class="h2s">{{sel.q}}</h2></div>
+<div class="acts">
+<sc-if value="{{sel.canCover}}" hint-placeholder-val="{{ true }}"><button class="btnp" onClick="{{sel.cover}}">Mark as covered</button></sc-if>
+<sc-if value="{{sel.isCovered}}" hint-placeholder-val="{{ false }}"><button class="btno" onClick="{{sel.uncover}}" title="Click to undo"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>Covered</button></sc-if>
+<sc-if value="{{sel.isProduct}}" hint-placeholder-val="{{ false }}"><span class="muted">A product gap, not a content gap.</span></sc-if>
+</div>
+</div>
+<div class="qgrid">
+<sc-for list="{{sel.where}}" as="w" hint-placeholder-count="2">
+<article class="{{w.cls}}">
+<span class="qm" aria-hidden="true">“</span>
+<p class="qt">{{w.quote}}</p>
+<div class="qf">
+<span class="qwho"><b>{{w.name}}</b><span class="qind"><i style="{{w.dot}}" aria-hidden="true"></i>{{w.out}}, {{w.industry}}</span></span>
+<span class="qlinks"><button class="lnk" onClick="{{w.srcOpen}}">{{w.srcLabel}}</button><button class="lnk" onClick="{{w.askGo}}">{{w.ask}}</button></span>
+</div>
+</article>
+</sc-for>
+</div>
+</sc-if>
+</main>
+
+<div class="foot"><p>Example data. Made up: Halden Pay and its call notes, the people Sam Patel, Lena Ortiz, Marcus Reid, Maya Chen and Jordan Lee, and who owns each deal and account. The Resale marketplace deal arrives live from the demo CRM through the database. Everything else comes from the case files.</p></div>
+
+<!-- ================= SOURCE PANEL ================= -->
+<sc-if value="{{drawerOpen}}" hint-placeholder-val="{{ false }}">
+<div>
+<button class="scrim" aria-label="Close panel" onClick="{{closeDrawer}}"></button>
+<aside class="drawer" role="dialog" aria-modal="true" aria-label="{{sp.title}}">
+<div class="dhead">
+<p class="dk">{{sp.kind}}, {{sp.when}}</p>
+<p class="dtitle">{{sp.title}}</p>
+<button class="x" onClick="{{closeDrawer}}" aria-label="Close"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></button>
+</div>
+<div class="dbody">
+<sc-if value="{{sp.back}}" hint-placeholder-val="{{ false }}"><button class="lnk" onClick="{{sp.goBack}}">Back to {{sp.backName}}</button></sc-if>
+<div class="ex">
+<sc-if value="{{sp.isQuote}}" hint-placeholder-val="{{ true }}"><span class="qm" aria-hidden="true">“</span></sc-if>
+<sc-if value="{{sp.hasSpeaker}}" hint-placeholder-val="{{ true }}"><p class="muted" style="font-weight: 500">{{sp.speaker}}</p></sc-if>
+<sc-for list="{{sp.lines}}" as="ln" hint-placeholder-count="2"><p class="exl">{{ln.t}}</p></sc-for>
+</div>
+<section class="box" style="padding: 0; gap: 10px">
+<h3 class="bh" style="font-size: 16px">Who to ask</h3>
+<sc-for list="{{sp.ask}}" as="sa" hint-placeholder-count="1"><div class="person"><span class="avl">{{sa.ini}}</span><span class="pn"><b>{{sa.name}}</b><span>{{sa.role}}</span></span><button class="lnk" onClick="{{sa.go}}">Message</button></div></sc-for>
+</section>
+<div><button class="btnp" onClick="{{sp.openFull}}"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>{{sp.openLabel}}</button></div>
+</div>
+</aside>
+</div>
+</sc-if>
+
+<sc-if value="{{hasToast}}" hint-placeholder-val="{{ false }}">
+<div class="toast" role="status"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>{{toast}}</span></div>
+</sc-if>
+
+</div>
+</template>
+<script src="lib/morphdom.js"></script>
+<script src="lib/supabase.js"></script>
+<script src="config.js"></script>
+<script src="lib/dc.js"></script>
+<script src="app.js"></script>
+<script>mount(Component);</script>
+</body>
+</html>
